@@ -1,0 +1,1019 @@
+/* Estilos generales */
+body {
+	margin: 0;
+	padding: 0;
+	background: #264653;
+	background-size: cover;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	overflow-x: hidden;
+}
+
+/* Cabecera */
+.cabecera {
+	background-color: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.cabecera a img {
+	width: 60%;
+	border-radius: 50%;
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+	z-index: 10;
+	position: relative;
+}
+
+.menu li {
+	margin-right: 20px;
+	position: relative;
+}
+
+.menu li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #264653;
+	list-style: none;
+}
+
+.menu a:hover {
+	background-color: #2A9D8F;
+	color: #E9C46A;
+}
+
+.menu li:hover ul {
+	display: block;
+}
+
+.menu li ul li {
+	width: 100%;
+}
+
+.menu li ul li a {
+	color: #E76F51;
+	font-weight: bold;
+}
+
+.menu li a {
+	color: #E76F51;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	font-weight: bold;
+}
+
+/*LOGOS REDES SOCIALES*/
+.logos {
+	width: 25%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logos img {
+	width: 40px;
+	height: auto;
+}
+
+.logos img:hover {
+	opacity: 0.8;
+}
+
+/*TITULO PAGINA INICIO*/
+.titulos1 h1 {
+	text-align: left;
+	color: #F4A261;
+	margin: 20px;
+	font-size: 4em;
+}
+
+.titulos1 h2 {
+	text-align: left;
+	color: #2A9D8F;
+	margin: 20px;
+	font-size: 2em;
+}
+
+/*Parrafo pagina incio*/
+.p1 {
+	color: #E9C46A;
+	line-height: 1.5;
+	text-align: justify;
+	font-size: 23px;
+	margin: 20px;
+}
+
+/* Contenedor de imágenes */
+.contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.imagen {
+	box-sizing: border-box;
+	width: 190px;
+	height: 254px;
+	background: rgba(217, 217, 217, 0.58);
+	border: 1px solid white;
+	box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+	backdrop-filter: blur(6px);
+	border-radius: 17px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	font-weight: bolder;
+	color: black;
+	flex-basis: 40%;
+	margin-bottom: 20px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.imagen:hover {
+	border: 1px solid black;
+	transform: scale(1.05);
+}
+
+.imagen:active {
+	transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.imagen img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 17px;
+}
+
+.imagen h2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	margin: 0;
+	background: #E76F51;
+	color: white;
+	border-radius: 0 0 17px 17px;
+	font-size: 14px;
+	text-align: center;
+	opacity: 0;
+	/* Ocultar inicialmente el título */
+	transition: opacity 0.3s;
+}
+
+.imagen:hover h2 {
+	opacity: 1;
+	/* Mostrar el título en el hover */
+	margin-bottom: 0;
+}
+
+/*CONTENEDOR DE FORMULARIO*/
+.formulario_y_parrafo {
+	display: inline-block;
+}
+
+/*FORMULARIO DE CONTACTO*/
+.formulario {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	float: left;
+	margin: 20px 10px 20px 60px;
+	padding: 25px;
+}
+
+.titulo_form h1 {
+	margin: 20px;
+	margin-left: 100px;
+	font-size: 3em;
+	color: #F4A261;
+}
+
+.titulo_form h2 {
+	margin-top: 0;
+	margin-left: 100px;
+	color: #2A9D8F;
+	font-size: 2em;
+}
+
+.formulario form {
+	width: 85%;
+	border: 1px solid #2A9D8F;
+	margin: 10px;
+	padding: 20px;
+}
+
+.formulario label {
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	color: #E9C46A;
+	margin-bottom: 10px;
+}
+
+.formulario textarea {
+	resize: vertical;
+	max-height: 300px;
+	min-height: 100px;
+}
+
+.formulario input {
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #2A9D8F;
+}
+
+.formulario textarea {
+	border: 1px solid #2A9D8F;
+}
+
+.formulario input:focus,
+textarea:focus {
+	border: 1px solid #E76F51;
+}
+
+.formulario input[type="submit"] {
+	margin-bottom: 0;
+	background: #2A9D8F;
+	color: #E9C46A;
+
+	border: none;
+}
+
+.formulario input[type="submit"]:hover {
+	background: #E76F51;
+	color: #264653;
+	cursor: pointer;
+}
+
+/*parrafo en el formulario*/
+.parrafo_form {
+
+	line-height: 1.5;
+	text-align: justify;
+	font-size: 18px;
+	padding: 60px;
+}
+
+.parrafo_form p {
+	font-size: 22px;
+	color: #E9C46A;
+	text-align: justify;
+}
+
+iframe {
+	position: absolute;
+	right: 35%;
+	margin-top: 240px;
+}
+
+
+/*POLITICA PRIVACIDAD*/
+.parrafos p {
+	color: #E9C46A;
+	line-height: 1.5;
+	text-align: justify;
+	font-size: 22px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.parrafos h1 {
+	margin-left: 20px;
+	text-transform: uppercase;
+	color: #F4A261;
+}
+
+.parrafos h4 {
+	text-transform: uppercase;
+	margin-left: 20px;
+	font-size: 25px;
+	color: #2A9D8F;
+}
+
+.parrafos li {
+	font-size: 22px;
+	color: #E9C46A;
+	line-height: 1.5;
+}
+
+/*TITULO FORMULARIO PREINSCRIPCION*/
+.titulo-preinscripcion {
+	background: #2A9D8F;
+	display: inline-block;
+	padding: 15px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.titulo-preinscripcion h1 {
+	color: #E9C46A;
+	font-size: 400%;
+}
+
+/*imagen formulario preinscripcion*/
+.img-preinscripcion {
+	flex-basis: 20%;
+	margin-bottom: 20px;
+	margin-top: 25px;
+	margin-left: 20px;
+
+}
+
+/*parrafo en el formulario de preinscripcion*/
+.parrafo_formpre {
+	
+	line-height: 1.5;
+	text-align: justify-content;
+	font-size: 18px;
+	padding: 60px;
+}
+
+.parrafo_formpre p {
+	font-size: 22px;
+	color: #F4A261;
+	text-align: justify;
+}
+
+img {
+	width: 40%;
+	height: auto;
+	border-radius: 30px;
+	float: left;
+	padding: 25px;
+}
+
+/*FORMULARIO PREINSCRIPCION*/
+.formulariopre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+.formulariopre h1 {
+	font-size: 6em;
+	text-align: center;
+	color: #E76F51;
+}
+
+form {
+	width: 40%;
+	height: 40%;
+	border: 1px solid #2A9D8F;
+	margin: 10px;
+	padding: 20px;
+}
+
+form p {
+	color: #E9C46A;
+}
+
+.formulariopre label {
+	font-size: 18px;
+	display: block;
+	width: 70%;
+	padding-left: 10%;
+	color: #E9C46A;
+}
+
+textarea {
+	resize: vertical;
+	max-height: 300px;
+	min-height: 100px;
+}
+
+input,
+textarea {
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #2A9D8F;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid #1668c4;
+}
+
+input[type="submit"] {
+	margin-bottom: 0;
+	background: #2A9D8F;
+	color: #E9C46A;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background: #F4A261;
+	cursor: pointer;
+	color: #264653;
+}
+
+/*CHECKBOX FROMULARIO PREINSCRIPCION*/
+.checkbox-contenedor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+fieldset {
+	border: 1px solid #2A9D8F;
+}
+
+legend {
+	color: #E9C46A;
+}
+
+.formulariopre label {
+	width: 70%;
+	padding-left: 10%;
+}
+
+.radio-contenedor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*FORMATO TITULOS CULTURA*/
+.titulo-cultura1 {
+	width: auto;
+}
+
+.titulo-cultura1 h1 {
+	font-size: 5em;
+	margin-left: 30px;
+	color: #F4A261;
+}
+
+.titulo-cultura2 {
+	display: inline-block;
+	padding: 15px;
+	border-radius: 50px;
+	width: 50%;
+	margin-left: 20px;
+}
+
+.titulo-cultura2 h3 {
+	width: 60%;
+	height: auto;
+	font-size: 2em;
+	color: #2A9D8F;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*FORMATO LISTA CULTURA*/
+.lamparas {
+	background: #264653;
+	
+}
+
+.cultura {
+	list-style-type: none;
+}
+
+.cultura p {
+	font-size: 22px;
+	color: #E9C46A;
+	font-weight: bold;
+	text-align: justify;
+}
+
+.cultura h4 {
+	color: #E76F51;
+	text-decoration: underline;
+	font-size: 25px;
+}
+
+.cultura li {
+	margin-right: 40%;
+}
+
+/*FORMATO TITULOS DEPORTES*/
+.titulo-deportes1 {
+	width: auto;
+}
+
+.titulo-deportes1 h1 {
+	font-size: 5em;
+	margin-left: 30px;
+	color: #F4A261;
+}
+
+.titulo-deportes2 {
+	background: #E76F51;
+	display: inline-block;
+	padding: 15px;
+	border-radius: 50px;
+	width: 75%;
+	text-align: center;
+	margin-left: 20px;
+}
+
+.titulo-deportes2 h3 {
+	width: 60%;
+	height: auto;
+	font-size: 2em;
+	color: #2A9D8F;
+	text-align: center;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+/*FORMATO LISTA DEPORTES*/
+.deporte {
+	list-style-type: none;
+	margin-left: 40px;
+}
+
+#item1 {
+	list-style-image: url(excursiones.png);
+}
+
+#item2 {
+	list-style-image: url(padel.jpg);
+}
+
+#item3 {
+	list-style-image: url(medio_natural.png);
+}
+
+#item4 {
+	list-style-image: url(running.jpg);
+}
+
+#item5 {
+	list-style-image: url(futbol.jpg);
+}
+
+#item6 {
+	list-style-image: url(voley_playa.png);
+}
+
+#item7 {
+	list-style-image: url(golf.png);
+}
+
+.deporte p {
+	font-size: 22px;
+	color: #E9C46A;
+}
+
+.deporte h4 {
+	color: #E76F51;
+	text-decoration: underline;
+	font-size: 25px;
+}
+
+.deporte li {
+	margin-right: 40%;
+}
+
+/*FORMATO TITULOS EVENTOS*/
+.titulo-eventos1 {
+	width: auto;
+}
+
+.titulo-eventos1 h1 {
+	font-size: 5em;
+	margin-left: 30px;
+	color: #F5BE7D;
+}
+
+.titulo-eventos2 {
+	display: inline-block;
+	padding: 15px;
+	border-radius: 50px;
+	width: 75%;
+	text-align: center;
+	
+}
+
+.titulo-eventos2 h3 {
+	width: 60%;
+	height: auto;
+	font-size: 2em;
+	color: #2A9D8F;
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/*FORMATO LISTA EVENTOS*/
+/*.concierto {
+	background: url(../imagenes/concierto.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+
+.contenedor-principal {
+	position: relative;
+}
+
+.eventos {
+	width: 60%;
+	list-style-type: upper-roman;
+	color: #E76F51;
+	font-size: 22px;
+}
+
+.eventos p {
+	font-size: 22px;
+	color: #E9C46A;
+	text-align: justify;
+}
+
+.eventos h4 {
+	color: #E76F51;
+	text-decoration: underline;
+	font-size: 25px;
+}
+
+.eventos li {
+	margin-right: 40%;
+}
+
+.video {
+	width: 40%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+/*PAGINA GASTRONOMIA*/
+.gastronomia {
+	background: #264653;
+	background-repeat: repeat;
+}
+
+.imagen-principal {
+	height: 50%;
+	float: left;
+	margin-left: 50px;
+	margin-right: 20px;
+	margin-top: 45px;
+	padding: 48px;
+	opacity: 0.7;
+	border-radius: 15% 15% 15% 15%;
+}
+
+.contenedor-texto {
+	display: block;
+	margin-right: 30px;
+	padding: 40px;
+	overflow: hidden;
+}
+
+.titulo-principal-gastro {
+	font-size: 1.5em;
+	color: #2A9D8F;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.p10 {
+	margin-right: 30%;
+	line-height: 30px;
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #E9C46A;
+	text-align: justify;
+}
+
+/*PIE DE PAGINA*/
+footer {
+	background-color: #264653;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 12%;
+	clear: both;
+	background-image: linear-gradient(45deg, #2A9D8F, #E9C46A, #F4A261, #E76F51);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+/*.brush-strokes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #2A9D8F, #E9C46A, #F4A261, #E76F51);
+    opacity: 0.2;
+    z-index: -1;
+}*/
+
+p {
+	font-size: 18px;
+	color: white;;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+footer ul {
+	list-style: none;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+footer li {
+	display: inline-block;
+	margin: 0px 10px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer a:hover {
+	color: #264653;
+}
+
+.domicilio {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	max-width: 400px;
+	width: 10%;
+}
+
+.domicilio h4 {
+	color: white;
+}
+
+.contenedor-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.contenedor-footer p {
+	margin-bottom: 10px;
+}
+
+.contenedor-footer ul {
+	margin-top: 10;
+}
+
+/*POLITICA DE COOKIES*/
+.texto-cookies p {
+	color: #E9C46A;
+	line-height: 1.5;
+	text-align: justify-content;
+	font-size: 22px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.texto-cookies h1 {
+	margin-left: 20px;
+	text-transform: uppercase;
+	color: #F4A261;
+}
+
+.texto-cookies h4 {
+	text-transform: uppercase;
+	margin-left: 20px;
+	color: #2A9D8F;
+}
+
+#lista1 {
+	list-style-type: decimal-leading-zero;
+}
+
+#lista2 {
+	list-style-type: upper-latin;
+}
+
+#lista3 {
+	list-style-type: lower-greek;
+}
+
+#lista4 {
+	list-style-type: square;
+}
+
+#lista5 {
+	list-style-type: disc;
+}
+
+#lista6 {
+	list-style-type: lower-roman;
+}
+
+.texto-cookies li {
+	font-size: 22px;
+	color: #E9C46A;
+	line-height: 1.5;
+}
+
+/*PAGINA VIAJES*/
+.titulo-viajes1 h1 {
+	font-size: 4em;
+	margin: 20px 0px 10px 20px;
+	padding: 15px;
+	color: #E76F51;
+}
+
+.titulo-viajes2 h3 {
+	color: #2A9D8F;
+	margin: 20px 0px 10px 20px;
+	padding: 15px;
+	background: #E9C46A;
+	border-radius: 50px;
+	display: inline-block;
+	width: fit-content;
+	border: 3px dashed #E76F51;
+}
+
+.viajes {
+	background: #2A9D8F;
+	width: 75%;
+	margin-left: 150px;
+	color: 00707E;
+	list-style-type: square;
+	padding: 15px;
+}
+
+.viajes h4 {
+	color: #E76F51;
+	font-size: 24px;
+	margin-left: 20px;
+	border-radius: 20px;
+	display: block;
+	width: fit-content;
+}
+
+.viajes p {
+	font-size: 22px;
+	color: #E9C46A;
+	padding: 15px;
+}
+
+.titulo-contenedor-viaje p{
+	color: #264653;
+	font-size: 22px;
+}
+
+.titulo-contenedor-viaje {
+	background: #F4A261;
+	color: #264653;
+	display: inline-block;
+	width: 45%;
+	padding: 30px;
+	margin-left: 30px;
+	margin-top: 40px;
+	vertical-align: top;
+	border: 3.5px dotted #E76F51;
+}
+
+.contenedor-viaje img {
+	width: 30%;
+	height: auto;
+	vertical-align: top;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	border-radius: 0 25% 0 25%;
+}
+
+/*PAGINA JUEGOS*/
+.contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+.titulo-juegos1 h1 {
+	font-size: 4em;
+	margin: 20px 0px 10px 20px;
+	padding: 15px;
+	color: #E76F51;
+}
+
+.titulo-juegos2 h3 {
+	color: #E76F51;
+	margin: 20px 0px 10px 20px;
+	padding: 15px;
+	background: #E9C46A;
+	border: 5px groove #2A9D8F;
+	display: inline-block;
+	width: fit-content;
+}
+
+.juegos {
+	background: #E76F51;
+	width: 75%;
+	margin-left: 150px;
+	color: #AF681A;
+	list-style-type: none;
+	font-weight: bold;
+
+}
+
+.juegos p {
+	font-size: 22px;
+	color: #E9C46A;
+}
+
+.juegos h4 {
+	color: #2A9D8F;
+	margin-left: 20px;
+	background-color: #264653;
+	display: inline-block;
+	width: fit-content;
+	border: 10px inset #F4A261;
+}
+
+/*AVISO LEGAL*/
+.parrafo-aviso-legal p {
+	color: #E9C46A;
+	line-height: 1.5;
+	text-align: justify;
+	font-size: 22px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.parrafo-aviso-legal h1 {
+	margin-left: 20px;
+	text-transform: uppercase;
+}
+
+.parrafo-aviso-legal h4 {
+	text-transform: uppercase;
+	margin-left: 20px;
+}
+
+#list1 {
+	list-style-type: decimal;
+}
+
+#list2 {
+	list-style-type: upper-latin;
+}
+
+#list3 {
+	list-style-type: decimal-leading-zero;
+}
+
+#list4 {
+	list-style-type: circle;
+}
+
+#list5 {
+	list-style-type: square;
+}
+
+#list6 {
+	list-style-type: disc;
+}
+
+#list7 {
+	list-style-type: lower-latin;
+}
+
+.parrafo-aviso-legal li {
+	font-size: 22px;
+	color: #E9C46A;
+	line-height: 1.5;
+}

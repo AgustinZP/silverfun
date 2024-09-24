@@ -1,0 +1,170 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/Pagina web.css" media="screen" />
+	<title>Formulario Preinscripcion</title>
+</head>
+
+<body>
+	<div class="cabecera">
+		<a href="../index.html"><img src="../imagenes/logosilverfun.png"></a>
+		<ul class="menu">
+			<li><a href="../index.html">Inicio</a></li>
+			<li><a href="#">Actividades</a>
+				<ul>
+					<li><a href="Gastronomia.html">Gastronomia</a></li>
+					<li><a href="Deportes.html">Deportes</a></li>
+					<li><a href="Cultura.html">Cultura</a></li>
+					<li><a href="Eventos.html">Eventos</a></li>
+					<li><a href="Viajes.html">Viajes</a></li>
+					<li><a href="Juegos.html">Juegos</a></li>
+				</ul>
+			</li>
+			<li><a href="Formulario contacto.html">Contacto</a></li>
+			<li><a href="Preinscripcion.html">Preinscripci&oacute;n</a></li>
+		</ul>
+		<div class="logos">
+			<a href="https://es-es.facebook.com/"><img src="../imagenes/facebook.png"></a>
+			<a href="https://www.instagram.com/"><img src="../imagenes/instagram.png"></a>
+			<a href="https://twitter.com/?lang=es"><img src="../imagenes/twitter.png"></a>
+			<a href="https://www.youtube.com/?hl=es&gl=ES"><img src="../imagenes/youtube.png"></a>
+		</div>
+	</div>
+	<div class="titulo-preinscripcion">
+		<h1>FORMULARIO DE<br> PREINSCRIPCION</h1>
+	</div>
+	<div class="img-preinscripcion">
+		<img src="../imagenes/gentefeliz.jpg">
+	</div>
+	<div class="parrafo_formpre">
+		<p>Presenta tu preinscripción, para ser socio de nuestro Territorio Singles. No te quedes sin tu plaza para
+			formar parte del primer Territorio único y exclusivo en Madrid.
+
+			Rellena el formulario, hazlo con la máxima sinceridad, ya que si algún dato comprobamos que no se ajusta a
+			la realidad lo descartaremos.
+
+			A continuación, buscaremos y te ubicaremos en el Territorio que mas se adapta a tu perfil, en cuanto a rango
+			de edad y gustos. Creemos que la afinidad
+			para conectar es muy importante y que para ti también es una tranquilidad saber que tipo de personas estarán
+			en él.
+
+			Recibirás un mail indicándote las coordenadas del Territorio donde tienes que ir a realizar la matricula de
+			socio personalmente.
+
+			Si no hay disponibilidad inmediata te pondremos en lista para avisarte lo antes posible cuando quede una
+			vacante.
+
+			Si tienes algún problema al rellenarlo mandanos un mail a preinscripcion@silverfun</p>
+	</div>
+	<div class="formulariopre_y_parrafo">
+		<div class="formulariopre">
+			<form action="mailto:agustinzarpe@gmail.com" method="post" enctype="text/plain">
+				<h1>Apúntate!</h1>
+				<label>
+					<input type="text" id="nombre" name="nombre" value="Nombre" maxlength="100" required>
+					<br>
+					<input type="text" id="apellidos" name="apellidos" value="Apellidos" maxlength="100" required>
+					<br>
+					<fieldset>
+						<legend>Sexo:</legend>
+						<div class="radio-contenedor">
+							<label>
+								Hombre
+								<input type="radio" value="sexo" name="opcion"></input>
+							</label>
+							<label>
+								Mujer
+								<input type="radio" value="sexo" name="opcion"></input>
+							</label>
+						</div>
+					</fieldset><br>
+					<input type="email" id="email" name="email" value="Email" maxlength="100" required>
+					<br>
+					<textarea id="mensaje" name="mensaje" value="Mensaje" cols="50" rows="7">Mensaje</textarea>
+					<br>
+					<input type="text" id="estado" name="estado" value="Estado civil" maxlength="100">
+					<br>
+					Edad<br>
+					<input type="number" id="edad" name="edad" value="Edad" max="120">
+					<br>
+					N&uacute;mero de hijos<br>
+					<input type="number" id="hijos" name="hijos" value="Número de hijos" min="0">
+					<br>
+					Profesión
+					<input type="text" id="profesion" name="profesion" value="Profesión" maxlength="100">
+					<br>
+					linkedin
+					<input type="url" id="linkedin" name="linkedin" value="URL de perfil de LinkedIn" maxlength="100">
+					<br>
+					Teléfono
+					<input type="tel" id="telefono" name="telefono" value="Teléfono" maxlength="100">
+					<br>
+				</label>
+				<fieldset>
+					<legend>Motivo por el que se inscribe:</legend>
+					<div class="checkbox-contenedor">
+						<label>
+							<input type="checkbox" id="divertirse" name="motivo" value="Divertirse">Divertirse
+						</label>
+						<label>
+							<input type="checkbox" id="pareja" name="motivo" value="Encontrar pareja estable">Encontrar
+							pareja estable
+						</label>
+						<label>
+							<input type="checkbox" id="afin" name="motivo"
+								value="Encontrar alguien afín sin compromiso">Encontrar alguien afín sin compromiso
+						</label>
+						<label>
+							<input type="checkbox" id="planes" name="motivo" value="Tener planes">Tener planes
+						</label>
+					</div>
+				</fieldset>
+				<br>
+				<label>¿Qué aficiones tiene?<br>
+					<textarea id="aficiones" name="aficiones" value="Aficiones" cols="50" rows="7"></textarea>
+					<br>
+					¿Qué actividades le gustaría encontrar en Silver Fun?<br>
+					<textarea id="actividades" name="actividades" value="Actividades" cols="50" rows="7"></textarea>
+				</label>
+				<br>
+				<br>
+				<label>Privacidad:
+					<input type="checkbox" id="privacidad" value="Privacidad">
+				</label>
+				<p>He leido y acepto la politica de
+					privacidad y cedo mis datos aqui rellenos.
+					Conforme a lo establecido en el nuevo reglamento europeo 679/2016 de protección de datos o RGPD, le
+					informamos que los datos personales
+					que consten en esta comunicación son responsabilidad de Territorio singles, con la finalidad de
+					gestionar la relación con nuestros clientes
+					y contactos en relación al ejercicio de nuestra actividad, todo ello bajo la legitimación otorgada
+					por consentimiento expreso del propio interesado,
+					y/o en base a la ejecución de un contrato de servicios. No se cederán datos a terceros salvo
+					obligaciones legales. En cuanto a sus derechos podrá acceder,
+					rectificar y suprimir los datos, limitarlos o incluso oponerse a su tratamiento, entre otros
+					derechos, contactando con nosotros en el email info@silverfun
+				</p>
+				<br>
+				<input type="submit" value="Enviar"></input>
+			</form>
+		</div>
+		<footer>
+			<div class="domicilio">
+				<h4>Domicilio:</h4>
+				<p>C/ Rafael Bergamin, 11<br>
+					Madrid C.P. 28043</p>
+			</div>
+			<div class="contenedor-footer">
+				<p>@2023 Silver Fun. Todos los derechos reservados</p>
+				<ul>
+					<li><a href="Politica Privacidad.html">Pol&iacute;tica de privacidad</a></li>
+					<li><a href="Cookies.html">Cookies</a></li>
+					<li><a href="Aviso Legal.html">Aviso legal</a></li>
+				</ul>
+			</div>
+		</footer>
+</body>
+
+</html>
