@@ -19,7 +19,7 @@
 
 1. Clona el repositorio:
    ```bash
-   git clone <git@github.com:AgustinZP/silverfun.git>
+   git clone git@github.com:AgustinZP/silverfun.git
   2. Abre el archivo `index.html` en tu navegador web preferido.
 
 ##  Conclusiones
